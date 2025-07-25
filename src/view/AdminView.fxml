@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpStage" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E8E4D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AdminViewController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="135.0" style="-fx-background-color: #5E9E79;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="viewTrails" layoutX="25.0" layoutY="327.0" mnemonicParsing="false" onAction="#viewTrailsClicked" style="-fx-background-color: #5E9E79;" text="View Trails" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="viewUsers" layoutX="47.0" layoutY="162.0" mnemonicParsing="false" onAction="#viewUsersClicked" style="-fx-background-color: #5E9E79;" text="View Users" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="logout" layoutX="46.0" layoutY="320.0" mnemonicParsing="false" onAction="#logoutClicked" style="-fx-background-color: #5E9E79;" text="Logout" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

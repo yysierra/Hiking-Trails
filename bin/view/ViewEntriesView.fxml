@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="767.0" style="-fx-background-color: #E8E4D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ViewEntriesController">
+   <children>
+      <TextField fx:id="searchBar" alignment="CENTER" layoutX="173.0" layoutY="127.0" prefHeight="40.0" prefWidth="405.0" promptText="Search by name. Select an entry to view more info" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <AnchorPane prefHeight="79.0" prefWidth="767.0" style="-fx-background-color: #5E9E79;">
+         <children>
+            <Label layoutX="199.0" layoutY="14.0" text="View Your Trailing History" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="46.0" text="You can only view your entries here. To add new entries, please visit the Trail Search" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="entries" layoutX="23.0" layoutY="191.0" prefHeight="348.0" prefWidth="362.0" />
+      <AnchorPane layoutX="397.0" layoutY="191.0" prefHeight="348.0" prefWidth="348.0" style="-fx-background-color: #FBE9D2; -fx-border-color: #5E9E79;">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="139.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/download.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="date" editable="false" layoutX="174.0" layoutY="29.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <TextField fx:id="trailName" editable="false" layoutX="174.0" layoutY="82.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="174.0" layoutY="14.0" text="DATE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="67.0" text="TRAIL NAME">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="distanceHiked" editable="false" layoutX="15.0" layoutY="136.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="21.0" layoutY="121.0" text="DISTANCE HIKED">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="duration" editable="false" layoutX="174.0" layoutY="136.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="174.0" layoutY="121.0" text="DURATION">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="averagePace" editable="false" layoutX="15.0" layoutY="184.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="21.0" layoutY="169.0" text="AVERAGE PACE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="comments" layoutX="8.0" layoutY="233.0" prefHeight="104.0" prefWidth="332.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="14.0" layoutY="218.0" text="COMMENTS">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="550.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SignInViewController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E8E4D9;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="59.0" layoutY="65.0" prefHeight="61.0" prefWidth="247.0" text="Create Your Account" textAlignment="JUSTIFY" textFill="#75bc4e">
+               <font>
+                  <Font name="Roboto" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfUsername" alignment="CENTER" layoutX="86.0" layoutY="163.0" prefHeight="29.0" prefWidth="179.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="88.0" layoutY="149.0" text="USERNAME OR NAME">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="207.0" text="PHONE NUMBER">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignUp" alignment="CENTER" layoutX="123.0" layoutY="343.0" mnemonicParsing="false" onAction="#btnSignUpClicked" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: #28B498; -fx-background-radius: 30;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnCancel" alignment="CENTER" layoutX="123.0" layoutY="409.0" mnemonicParsing="false" onAction="#btnCancelClicked" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: #28B498; -fx-background-radius: 30;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Button>
+            <PasswordField fx:id="pfPassword" alignment="CENTER" layoutX="86.0" layoutY="275.0" prefHeight="29.0" prefWidth="179.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="88.0" layoutY="261.0" text="PASSWORD">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPhoneNumber" alignment="CENTER" layoutX="86.0" layoutY="221.0" prefHeight="29.0" prefWidth="179.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

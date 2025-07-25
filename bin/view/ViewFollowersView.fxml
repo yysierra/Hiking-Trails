@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="767.0" style="-fx-background-color: #E8E4D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ViewFollowersViewController">
+   <children>
+      <TextField fx:id="searchBar" layoutX="173.0" layoutY="127.0" onAction="#search" prefHeight="40.0" prefWidth="405.0" promptText="Search by name" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <AnchorPane prefHeight="79.0" prefWidth="767.0" style="-fx-background-color: #5E9E79;">
+         <children>
+            <Label layoutX="252.0" layoutY="14.0" text="View your followers " textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="177.0" layoutY="46.0" text="Here you can view those who want to stay connected with you" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="followersView" layoutX="23.0" layoutY="191.0" prefHeight="348.0" prefWidth="362.0" />
+      <AnchorPane layoutX="397.0" layoutY="191.0" prefHeight="348.0" prefWidth="348.0" style="-fx-background-color: #FBE9D2; -fx-border-color: #5E9E79;">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="160.0" layoutX="96.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/download.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="username" editable="false" layoutX="25.0" layoutY="162.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="27.0" layoutY="147.0" text="NAME">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberOfTrailEntries" editable="false" layoutX="27.0" layoutY="207.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="25.0" layoutY="192.0" text="TRAIL ENTRIES">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberOfReviews" editable="false" layoutX="27.0" layoutY="253.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="27.0" layoutY="238.0" text="REVIEWS">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="followers" editable="false" layoutX="185.0" layoutY="162.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <TextField fx:id="following" editable="false" layoutX="185.0" layoutY="207.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="185.0" layoutY="147.0" text="FOLLOWERS">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="192.0" text="FOLLOWING">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="unfollow" layoutX="227.0" layoutY="250.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: #28B498; -fx-background-radius: 30;" text="Unfollow" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="block" layoutX="226.0" layoutY="294.0" mnemonicParsing="false" onAction="#blockClicked" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: #B22222; -fx-background-radius: 30;" text="Block" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

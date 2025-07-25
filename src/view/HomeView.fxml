@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpStage" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E8E4D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.HomeViewController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="135.0" style="-fx-background-color: #5E9E79;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnHome" mnemonicParsing="false" onAction="#btnHomeClicked" style="-fx-background-color: #5E9E79;" text="Home" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProfile" layoutX="51.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnProfileClicked" style="-fx-background-color: #5E9E79;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnFollowers" layoutX="34.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnFollowersClicked" style="-fx-background-color: #5E9E79;" text="Followers" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFollowing" layoutX="34.0" layoutY="310.0" mnemonicParsing="false" onAction="#btnFollowingClicked" style="-fx-background-color: #5E9E79;" text="Following" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTrailSearch" layoutX="25.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnTrailSearchClicked" style="-fx-background-color: #5E9E79;" text="Trail Search" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnViewReviews" layoutX="34.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnViewReviewsClicked" style="-fx-background-color: #5E9E79;" text="View Reviews" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnViewEntries" layoutX="47.0" layoutY="162.0" mnemonicParsing="false" onAction="#btnViewEntriesClicked" style="-fx-background-color: #5E9E79;" text="View Entries" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnLogout" layoutX="46.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnLogoutClicked" style="-fx-background-color: #5E9E79;" text="Logout" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

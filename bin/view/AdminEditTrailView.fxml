@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="650.0" style="-fx-background-color: #FBE9D2; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AdminEditTrailViewController">
+   <top>
+      <AnchorPane prefHeight="79.0" prefWidth="650.0" style="-fx-background-color: #5E9E79; -fx-background-radius: 30;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="close" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeClicked" style="-fx-background-color: #5E9E79;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="211.0" layoutY="27.0" text="Edit Trail Information" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="20.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="trailName" layoutX="90.0" layoutY="45.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="96.0" layoutY="30.0" text="TRAIL NAME">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="90.0" text="HEAD ADDRESS">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="type" layoutX="379.0" layoutY="45.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="379.0" layoutY="30.0" text="TYPE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="update" layoutX="263.0" layoutY="226.0" mnemonicParsing="false" onAction="#updateClicked" prefHeight="35.0" prefWidth="124.0" style="-fx-background-color: #28B498; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Button>
+            <TextField fx:id="length" layoutX="379.0" layoutY="105.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <TextField fx:id="headAddress" layoutX="90.0" layoutY="105.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="382.0" layoutY="90.0" text="LENGTH">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="154.0" text="DIFFICULTY">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="difficulty" layoutX="90.0" layoutY="169.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <TextField fx:id="elevationGain" layoutX="378.0" layoutY="169.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+            <Label layoutX="379.0" layoutY="154.0" text="ELEVATION GAIN">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
