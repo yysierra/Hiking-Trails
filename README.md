@@ -1,6 +1,6 @@
 # Hiking Trails
 
-This was a final project that I created for CSE248.
+This was a final project that I created for CSE218 using common data structures. The app was meant to mimic the popular *AllTrails* website.
 
 The project itself was very last minute and rushed. At the time of making this project, I found it to be very difficult, and a little buggy. Images and pictures don't load properly. I'll possibly update the files in the future to ensure those issues are fixed, but for now it is what it is.
 
