@@ -4,7 +4,7 @@ This was a final project that I created for CSE218 using common data structures.
 
 The project itself was very last minute and rushed. At the time of making this project, I found it to be very difficult, and a little buggy. Images and pictures don't load properly. I'll possibly update the files in the future to ensure those issues are fixed, but for now it is what it is.
 
-Below is a description of the containers/data structures I choose to use for the project. The portion was written on 12/14/23.
+Below is a description of the containers/data structures I chose to use for the project. The portion was written on 12/14/23.
 
 # 12/14
 
